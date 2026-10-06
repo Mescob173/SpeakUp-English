@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function Home() {
@@ -48,7 +49,9 @@ function Home() {
           </nav>
 
           <div className="nav-actions">
-            <button className="login-btn">Student Login</button>
+            <Link to="/login" className="login-btn">
+  Login
+</Link>
 
             <a href="/assessment" className="assessment-btn">
               Evaluación gratis
@@ -528,7 +531,9 @@ function Home() {
               <strong>Empieza</strong>
               <a href="/assessment">Evaluación gratis</a>
               <a href="#pricing">Private Coaching</a>
-              <a href="#">Student Login</a>
+              <Link to="/login" className="login-btn">
+  Login
+</Link>
             </div>
           </div>
         </div>
